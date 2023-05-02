@@ -12,10 +12,10 @@
         android:id="@+id/work_Tv"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:text="11+22"
+        android:text=""
         android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textSize="60dp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,10 +28,11 @@
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginBottom="30dp"
-        android:text="33"
+        android:text="="
+        android:visibility="gone"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textSize="70dp"
+        android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/work_Tv"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,9 +56,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="0"
+            android:onClick="onDigitClick"
+            android:text="@string/button_0"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -67,9 +69,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="."
+            android:onClick="onDigitClick"
+            android:text="@string/button_dot"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -79,9 +82,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/orange"
-            android:text="="
+            android:onClick="onEqualClick"
+            android:text="@string/button_equals"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:cornerRadius="999dp" />
     </LinearLayout>
 
@@ -103,9 +107,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_1"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -115,9 +120,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="2"
+            android:onClick="onDigitClick"
+            android:text="@string/button_2"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -127,9 +133,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="3"
+            android:onClick="onDigitClick"
+            android:text="@string/button_3"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -139,9 +146,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/orange"
-            android:text="+"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_plus"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:cornerRadius="999dp" />
     </LinearLayout>
 
@@ -163,9 +171,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="4"
+            android:onClick="onDigitClick"
+            android:text="@string/button_4"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -175,9 +184,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="5"
+            android:onClick="onDigitClick"
+            android:text="@string/button_5"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -187,9 +197,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="6"
+            android:onClick="onDigitClick"
+            android:text="@string/button_6"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -199,9 +210,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/orange"
-            android:text="-"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_minus"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:cornerRadius="999dp" />
     </LinearLayout>
 
@@ -223,9 +235,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/light_grey"
-            android:text="c"
+            android:onClick="onClearClick"
+            android:text="@string/button_clear"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -235,9 +248,9 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/light_grey"
-            android:text="+/-"
-            android:textColor="@color/white"
-            android:textSize="20dp"
+            android:onClick="onBackClick"
+            app:icon="@drawable/backspace"
+            app:iconTint= "@color/white"
             app:cornerRadius="999dp" />
 
         <Button
@@ -247,9 +260,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/light_grey"
-            android:text="%"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_percent"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -259,9 +273,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/orange"
-            android:text="/"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_division"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:cornerRadius="999dp" />
     </LinearLayout>
 
@@ -283,9 +298,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="7"
+            android:onClick="onDigitClick"
+            android:text="@string/button_7"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -295,21 +311,19 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/dark_grey"
-            android:text="8"
+            android:onClick="onDigitClick"
+            android:text="@string/button_8"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
             android:id="@+id/button9"
-            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_margin="15dp"
-            android:backgroundTint="@color/dark_grey"
-            android:text="9"
+            style="@style/digitbutton"
+            android:onClick="onDigitClick"
+            android:text="@string/button_9"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="25sp"
             app:cornerRadius="999dp" />
 
         <Button
@@ -319,9 +333,10 @@
             android:layout_height="72dp"
             android:layout_margin="15dp"
             android:backgroundTint="@color/orange"
-            android:text="x"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_multiply"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:cornerRadius="999dp" />
     </LinearLayout>
 
