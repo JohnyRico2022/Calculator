@@ -12,7 +12,7 @@
     <string name="button_0">0</string>
     <string name="button_plus">+</string>
     <string name="button_minus">-</string>
-    <string name="button_multiply">X</string>
+    <string name="button_multiply">*</string>
     <string name="button_division">/</string>
     <string name="button_equals">=</string>
     <string name="button_clear">C</string>

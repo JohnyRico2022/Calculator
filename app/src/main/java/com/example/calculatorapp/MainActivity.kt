@@ -47,17 +47,21 @@ class MainActivity : AppCompatActivity() {
 
     fun onBackClick(view: View) {
 
-        binding.workTv.text = binding.resultTv.text.toString().dropLast(1)
-        try {
-            val lastChar = binding.workTv.text.toString().last()
-            if (lastChar.isDigit()) {
-                onEqual()
-            }
-        } catch (e: Exception) {
-            binding.resultTv.text = ""
-            binding.resultTv.visibility = View.GONE
-            Log.e("last char error", e.toString())
-        }
+        val lenght = binding.workTv.text.length
+        if (lenght>1)
+            binding.workTv.text = binding.workTv.text.subSequence(0,lenght-1)
+
+//        binding.workTv.text = binding.resultTv.text.toString().dropLast(1)
+//        try {
+//            val lastChar = binding.workTv.text.toString().last()
+//            if (lastChar.isDigit()) {
+//                onEqual()
+//            }
+//        } catch (e: Exception) {
+//            binding.resultTv.text = ""
+//            binding.resultTv.visibility = View.GONE
+//            Log.e("last char error", e.toString())
+//        }
     }
 
     fun onClearClick(view: View) {
@@ -93,7 +97,7 @@ class MainActivity : AppCompatActivity() {
     fun onEqualClick(view: View) {
 
         onEqual()
-        binding.workTv.text = binding.resultTv.text.toString().drop(1)
+        binding.workTv.text = binding.resultTv.text.toString()
     }
 
 }
