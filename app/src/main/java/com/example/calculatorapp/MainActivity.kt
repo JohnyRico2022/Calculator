@@ -8,7 +8,6 @@ import android.widget.Button
 import com.example.calculatorapp.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.Expression
 import net.objecthunter.exp4j.ExpressionBuilder
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -48,20 +47,9 @@ class MainActivity : AppCompatActivity() {
     fun onBackClick(view: View) {
 
         val lenght = binding.workTv.text.length
-        if (lenght>1)
+        if (lenght>=1)
             binding.workTv.text = binding.workTv.text.subSequence(0,lenght-1)
 
-//        binding.workTv.text = binding.resultTv.text.toString().dropLast(1)
-//        try {
-//            val lastChar = binding.workTv.text.toString().last()
-//            if (lastChar.isDigit()) {
-//                onEqual()
-//            }
-//        } catch (e: Exception) {
-//            binding.resultTv.text = ""
-//            binding.resultTv.visibility = View.GONE
-//            Log.e("last char error", e.toString())
-//        }
     }
 
     fun onClearClick(view: View) {
